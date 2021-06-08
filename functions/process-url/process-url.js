@@ -12,14 +12,14 @@ exports.handler = async function(event, ctx) {
   try {
     // https://res.cloudinary.com/sector/image/upload/v1583637123/og-images/img-1.png
     const imageUrl = cloudinary.url(
-      `${process.env.CHRIS_IMAGE_VERSION}/og-images/img-2.png`,
+      `${process.env.IMAGE_VERSION}/og-images/img-2.png`,
       {
         // resouce_type: "raw"
         sign_url: true,
         // secure: true,
         custom_pre_function: {
           function_type: "remote",
-          source: `https://relaxed-payne-d1bfbe.netlify.app/.netlify/functions/gen-opengraph-image?${qs.stringify(
+          source: `https://peaceful-jepsen-6d77ee.netlify.app/.netlify/functions/gen-opengraph-image?${qs.stringify(
             queryStringParameters
           )}`
         }
