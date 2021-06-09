@@ -1,7 +1,7 @@
 const cloudinary = require("cloudinary").v2;
 const qs = require("querystring");
 cloudinary.config({
-  cloud_name: "sector",
+  cloud_name: "dbivgulsd",
   api_key: process.env.CLOUDINARY_KEY,
   api_secret: process.env.CLOUDINARY_SECRET
 });
@@ -12,7 +12,7 @@ exports.handler = async function(event, ctx) {
   try {
     // https://res.cloudinary.com/sector/image/upload/v1583637123/og-images/img-1.png
     const imageUrl = cloudinary.url(
-      `${process.env.IMAGE_VERSION}/og-images/img-2.png`,
+      `${process.env.IMAGE_VERSION}/og-images/img-1.jpg`,
       {
         // resouce_type: "raw"
         sign_url: true,
