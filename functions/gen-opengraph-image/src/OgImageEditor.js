@@ -9,7 +9,7 @@ function App() {
     <div className={css.root}>
     <div>
         <h1>
-            {title || "title Missing"}
+            {window.title || "title Missing"}
         </h1>
         
     </div>
