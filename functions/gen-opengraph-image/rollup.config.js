@@ -8,10 +8,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 const config = {
-  input: "src/image.js",
+  input: "src/OgImageEditor.js",
   output: [
     {
-      file: `image.js`,
+      file: `OgImageEditor.js`,
       format: "iife"
     }
   ],
