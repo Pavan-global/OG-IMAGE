@@ -90,6 +90,7 @@ function App() {
               <li key={tag}>{tag}</li>
             ))}
           </ul>
+          
           <span>{window.author}</span>
         </div>
       </div>
