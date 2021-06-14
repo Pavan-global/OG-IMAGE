@@ -17,8 +17,7 @@ function App() {
       }}
     >
        <img css={{position:absolute,
-    left: 0,
-    top:0,
+   
     width: "100%",
     height: "100%",
     zIndex: 0}} src={"https://images.ctfassets.net/hrltx12pl8hq/3MbF54EhWUhsXunc5Keueb/60774fbbff86e6bf6776f1e17a8016b4/04-nature_721703848.jpg?fit=fill&w=480&h=270"} ></img>
